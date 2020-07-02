@@ -13,6 +13,8 @@ import io
 import collections
 from flask import Flask, send_file, request
 from benchmark_plots import makeplots
+import nestpy
+version = nestpy.__nest_version__
 #  TODO: 
 # In IMAGE_OBJECTS, check version of nestpy?  Or generate file upon request?
 
@@ -33,7 +35,7 @@ def get_image():
 
 @app.route('/')
 def hello():
-    message = "Welcome to your very first Flask app of nestpy! At the end of this URL Type in:"
+    message = "Welcome to your very first Flask app of NEST v"+ version + "! At the end of this URL Type in:"
     typecommand = " /get_image?interaction='type of interaction'&yieldtype='either LY (light yield) or QY (charge yield)' "
     return(message + typecommand)
 
