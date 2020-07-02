@@ -83,7 +83,7 @@ def GetYieldsVectorized(interaction, yield_type, **kwargs):
 
     interaction_object = GetInteractionObject(interaction)
     if 'energy' in kwargs.keys():
-        if interaction_object == GetInteractionObject('nr') and kwargs['energy'] > 3e2:
+        if interaction_object == GetInteractionObject('nr') and kwargs['energy'] > 2e2:
             return np.nan
         if interaction_object == GetInteractionObject('gammaray') and kwargs['energy'] > 3e3:
             return np.nan
