@@ -208,7 +208,7 @@ def beta_subplot(x, y_photons, y_electrons, driftFields, IMAGE_OBJECTS):
         ax.set_xlabel('Energy [keV]', fontsize=20)
         ax.margins(0)
 
-    ax1.text(energies[0][32], 20, 
+    ax1.text(1, 65, # energies[0][32], 20, 
                 version_textbox, 
                 bbox=bbox, horizontalalignment='left', fontsize='x-large')
     ax2.text(energies[0][np.argmax(beta_electrons)-35], 74, 
@@ -306,7 +306,7 @@ def Pb_subplot(x, y_photons, y_electrons, driftFields, IMAGE):
     ax1.text(40, 0.3, 
                 version_textbox, 
                 bbox=bbox, horizontalalignment='left', fontsize='x-large')
-    ax2.text(40, 0.03, 
+    ax2.text(40, 0.3, 
                 version_textbox, 
                 bbox=bbox, horizontalalignment='left', fontsize='x-large')
     ax1.set_ylim(0,10)
