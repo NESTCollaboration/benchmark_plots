@@ -1,4 +1,7 @@
 # NESTplots
+[Binder Tutorial (hint: start here!)](https://mybinder.org/v2/gh/RiceAstroparticleLab/software-tutorials/HEAD)
+
+
 This code is here to show the process of performing computations for benchmark plots. 
 <br>
 Updated 7/2/20 to include better documentation. 
